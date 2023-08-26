@@ -1,5 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
+/* Default styles for all screens (including mobile) */
+
+/* Media query for small screens (e.g., smartphones) */
+@media (max-width: 576px) {
+  /* Adjust layout for small screens */
+  .body-container {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  /* Adjust fonts for small screens */
+  .title {
+    font-size: 18px; /* Example font size adjustment */
+  }
+
+  /* Adjust other styles as needed for small screens */
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 1024px) {
+  /* Adjust layout for medium screens, e.g., increase sidebar width */
+  .body-left {
+    width: 40%; /* Example adjustment */
+  }
+
+  /* Adjust fonts for medium screens */
+  .title {
+    font-size: 24px; /* Example font size adjustment */
+  }
+
+  /* Adjust other styles as needed for medium screens */
+}
+
+/* Media query for larger screens (e.g., laptops and desktops) */
+@media (min-width: 1025px) {
+  /* Adjust layout for larger screens, e.g., make sidebar wider */
+  .body-left {
+    width: 25%; /* Example adjustment */
+  }
+
+  /* Adjust fonts for larger screens */
+  .title {
+    font-size: 36px; /* Example font size adjustment */
+  }
+
+  /* Adjust other styles as needed for larger screens */
+}
+
+
 .layout-container {
   height: 100vh;
 }
@@ -27,7 +75,7 @@
 }
 
 .body-container {
-  height: 90%;
+  height: 97%;
   background-color: #c9d2c5;
   display: flex;
 }
